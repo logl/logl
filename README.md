@@ -1,6 +1,6 @@
 # logl: A simple Java logging framework for libraries
 
-[![Build Status](https://circleci.com/gh/ConsenSys/logl.svg?style=shield)](https://circleci.com/gh/ConsenSys/logl) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/ConsenSys/logl/blob/master/LICENSE)
+[![Build Status](https://circleci.com/gh/logl/logl.svg?style=shield)](https://circleci.com/gh/logl/logl) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/logl/logl/blob/master/LICENSE)
 
 Logl aims to provide a very simple logging API for use inside libraries and
 other distributable components. It does not use global singletons,
@@ -21,7 +21,8 @@ implementations for simple use cases.
 Using logl in a library is quite straight foward: require an instance of
 `org.logl.LoggerProvider` be supplied (at instantiation) to all library
 objects that need to perform logging. If you wish to provide a default,
-use `LoggerProvider.nullProvider()` (or `Logger.nullLogger()`). E.g.:
+which is usually a good idea, use `LoggerProvider.nullProvider()` (or
+`Logger.nullLogger()`). E.g.:
 
 ```java
 public class MyService {
@@ -42,10 +43,10 @@ public class MyService {
 
 ## Using a library that supports logl
 
-When encountering a library that supports logl, your application can should
-provide an appropriate instance of a `LoggerProvider` when instantiating
-library objects. There are `LoggerProvider` instances available for all
-major logging frameworks as well as some simple ones provided by `logl-logl`.
+When encountering a library that supports logl, your application can provide an
+appropriate instance of a `LoggerProvider` when instantiating library objects.
+There are `LoggerProvider` instances available for all major logging frameworks
+as well as some simple ones provided by `logl-logl`.
 
 ```java
 public class MyApplication {
@@ -58,17 +59,17 @@ public class MyApplication {
 }
 ```
 
-See the [API documentation](https://consensys.github.io/logl/docs/java/latest/)
-for details, specifically [SimpleLogger](https://consensys.github.io/logl/docs/java/latest/org/logl/logl/SimpleLogger.html),
-[UnformattedLogger](https://consensys.github.io/logl/docs/java/latest/org/logl/logl/UnformattedLogger.html),
-[JULLoggerProvider](https://consensys.github.io/logl/docs/java/latest/org/logl/jul/JULLoggerProvider.html),
-[Log4j2LoggerProvider](https://consensys.github.io/logl/docs/java/latest/org/logl/log4j2/Log4j2LoggerProvider.html),
-and [Slf4jLoggerProvider](https://consensys.github.io/logl/docs/java/latest/org/logl/slf4j/Slf4jLoggerProvider.html).
+See the [API documentation](https://logl.org/docs/java/latest/)
+for details, specifically [SimpleLogger](https://logl.org/docs/java/latest/org/logl/logl/SimpleLogger.html),
+[UnformattedLogger](https://logl.org/docs/java/latest/org/logl/logl/UnformattedLogger.html),
+[JULLoggerProvider](https://logl.org/docs/java/latest/org/logl/jul/JULLoggerProvider.html),
+[Log4j2LoggerProvider](https://logl.org/docs/java/latest/org/logl/log4j2/Log4j2LoggerProvider.html),
+and [Slf4jLoggerProvider](https://logl.org/docs/java/latest/org/logl/slf4j/Slf4jLoggerProvider.html).
 
 
 ## Links
 
-- [GitHub project](https://github.com/ConsenSys/logl)
-- [Online documentation](https://consensys.github.io/logl/docs/java/latest/)
-- [Issue tracker: Report a defect or feature request](https://github.com/ConsenSys/logl/issues/new)
+- [GitHub project](https://github.com/logl/logl)
+- [Online documentation](https://logl.org/docs/java/latest/)
+- [Issue tracker: Report a defect or feature request](https://github.com/logl/logl/issues/new)
 - [StackOverflow: Ask "how-to" and "why-didn't-it-work" questions](https://stackoverflow.com/questions/ask?tags=logl+java)
