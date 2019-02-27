@@ -18,12 +18,12 @@
  */
 package org.logl.logl;
 
-import java.util.function.Consumer;
-import java.util.function.Supplier;
-
 import org.logl.Level;
 import org.logl.LogMessage;
 import org.logl.LogWriter;
+
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 interface LevelLogger {
 

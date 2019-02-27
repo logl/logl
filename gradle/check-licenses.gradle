@@ -83,7 +83,7 @@ downloadLicenses {
   ]
 
   licenses = [
-    (group('logl')): apache2,
+    (group('logl')): mit,
 
     // https://checkerframework.org/manual/#license
     // The more permissive MIT License applies to code that you might want

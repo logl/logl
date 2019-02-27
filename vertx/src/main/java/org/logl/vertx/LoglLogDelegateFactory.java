@@ -18,11 +18,12 @@
  */
 package org.logl.vertx;
 
+import org.logl.LoggerProvider;
+
 import java.util.Map;
 
 import io.vertx.core.spi.logging.LogDelegate;
 import io.vertx.core.spi.logging.LogDelegateFactory;
-import org.logl.LoggerProvider;
 
 /**
  * A <a href="http://vertx.io">Vert.x</a> {@link LogDelegateFactory} implementation backed by logl.

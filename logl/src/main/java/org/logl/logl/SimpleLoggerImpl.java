@@ -20,6 +20,11 @@ package org.logl.logl;
 
 import static java.util.Objects.requireNonNull;
 
+import org.logl.Level;
+import org.logl.LogMessage;
+import org.logl.LogWriter;
+import org.logl.Logger;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.Instant;
@@ -31,11 +36,6 @@ import java.util.Locale;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-
-import org.logl.Level;
-import org.logl.LogMessage;
-import org.logl.LogWriter;
-import org.logl.Logger;
 
 final class SimpleLoggerImpl implements AdjustableLogger, LevelLogger {
 

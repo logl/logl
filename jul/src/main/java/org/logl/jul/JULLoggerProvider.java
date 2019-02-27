@@ -20,10 +20,10 @@ package org.logl.jul;
 
 import static org.logl.LoggerProvider.loggerName;
 
-import java.util.function.Function;
-
 import org.logl.Logger;
 import org.logl.LoggerProvider;
+
+import java.util.function.Function;
 
 /**
  * An implementation of a {@link org.logl.LoggerProvider} that delegates to {@link java.util.logging.LogManager}.

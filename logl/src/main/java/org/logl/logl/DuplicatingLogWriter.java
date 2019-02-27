@@ -18,15 +18,15 @@
  */
 package org.logl.logl;
 
+import org.logl.Level;
+import org.logl.LogMessage;
+import org.logl.LogWriter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-
-import org.logl.Level;
-import org.logl.LogMessage;
-import org.logl.LogWriter;
 
 final class DuplicatingLogWriter implements LogWriter {
   private final Level level;

@@ -20,6 +20,12 @@ package org.logl.vertx;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.logl.Level;
+import org.logl.LogMessage;
+import org.logl.LogWriter;
+import org.logl.Logger;
+import org.logl.LoggerProvider;
+
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.UncheckedIOException;
@@ -27,11 +33,6 @@ import java.util.Locale;
 import java.util.function.Consumer;
 
 import org.junit.jupiter.api.Test;
-import org.logl.Level;
-import org.logl.LogMessage;
-import org.logl.LogWriter;
-import org.logl.Logger;
-import org.logl.LoggerProvider;
 
 class InteractionRecordingLoggerProviderTest {
 

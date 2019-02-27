@@ -20,6 +20,11 @@ package org.logl.slf4j;
 
 import static java.util.Objects.requireNonNull;
 
+import org.logl.Level;
+import org.logl.LogMessage;
+import org.logl.LogWriter;
+import org.logl.Logger;
+
 import java.io.IOException;
 import java.lang.ref.SoftReference;
 import java.util.Locale;
@@ -27,11 +32,6 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-
-import org.logl.Level;
-import org.logl.LogMessage;
-import org.logl.LogWriter;
-import org.logl.Logger;
 
 /**
  * An implementation of a {@link Logger} that delegates logging to a {@link org.slf4j.Logger org.slf4j.Logger}.

@@ -20,12 +20,13 @@ package org.logl.jul;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
+import org.logl.LogMessage;
+import org.logl.Logger;
+
 import java.util.logging.LogManager;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.logl.LogMessage;
-import org.logl.Logger;
 
 class JULLoggerProviderTest {
 

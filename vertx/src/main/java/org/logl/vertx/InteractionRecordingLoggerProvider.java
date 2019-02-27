@@ -18,15 +18,15 @@
  */
 package org.logl.vertx;
 
-import java.util.Deque;
-import java.util.concurrent.ConcurrentLinkedDeque;
-import java.util.function.Consumer;
-
 import org.logl.Level;
 import org.logl.LogMessage;
 import org.logl.LogWriter;
 import org.logl.Logger;
 import org.logl.LoggerProvider;
+
+import java.util.Deque;
+import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.function.Consumer;
 
 final class InteractionRecordingLoggerProvider implements LoggerProvider {
   private final Deque<Consumer<LoggerProvider>> record = new ConcurrentLinkedDeque<>();

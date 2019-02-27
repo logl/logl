@@ -20,10 +20,11 @@ package org.logl.slf4j;
 
 import static org.logl.LoggerProvider.loggerName;
 
-import java.util.function.Function;
-
 import org.logl.Logger;
 import org.logl.LoggerProvider;
+
+import java.util.function.Function;
+
 import org.slf4j.LoggerFactory;
 
 /**

@@ -18,9 +18,10 @@
  */
 package org.logl.vertx;
 
-import io.vertx.core.spi.logging.LogDelegate;
 import org.logl.LogMessage;
 import org.logl.Logger;
+
+import io.vertx.core.spi.logging.LogDelegate;
 
 final class LoglLogDelegate implements LogDelegate {
 

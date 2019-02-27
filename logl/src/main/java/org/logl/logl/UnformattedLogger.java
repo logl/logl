@@ -20,6 +20,9 @@ package org.logl.logl;
 
 import static java.util.Objects.requireNonNull;
 
+import org.logl.Level;
+import org.logl.Logger;
+
 import java.io.BufferedWriter;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -29,9 +32,6 @@ import java.util.Collections;
 import java.util.Locale;
 import java.util.Map;
 import java.util.function.Supplier;
-
-import org.logl.Level;
-import org.logl.Logger;
 
 /**
  * Factory methods for creating loggers that writes log lines without any formatting or adornment.

@@ -22,6 +22,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.logl.Level;
+import org.logl.LogMessage;
+import org.logl.Logger;
+import org.logl.LoggerProvider;
+
 import java.io.CharArrayWriter;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -30,10 +35,6 @@ import java.time.Instant;
 import org.assertj.core.api.Java6Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.logl.Level;
-import org.logl.LogMessage;
-import org.logl.Logger;
-import org.logl.LoggerProvider;
 
 class DuplicatingLoggerTest {
 

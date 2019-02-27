@@ -20,11 +20,12 @@ package org.logl.log4j2;
 
 import static org.logl.LoggerProvider.loggerName;
 
+import org.logl.Logger;
+import org.logl.LoggerProvider;
+
 import java.util.function.Function;
 
 import org.apache.logging.log4j.LogManager;
-import org.logl.Logger;
-import org.logl.LoggerProvider;
 
 /**
  * An implementation of a {@link org.logl.LoggerProvider} that delegates to {@link org.apache.logging.log4j.LogManager

@@ -153,7 +153,7 @@ subprojects {
       removeUnusedImports()
       licenseHeaderFile rootProject.file('gradle/spotless.license.java')
       eclipse().configFile(rootProject.file('gradle/eclipse-java-consensys-style.xml'))
-      importOrder 'io.logl', 'java', ''
+      importOrder 'org.logl', 'java', ''
       endWithNewline()
     }
     kotlin {

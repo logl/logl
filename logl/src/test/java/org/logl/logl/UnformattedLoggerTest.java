@@ -21,6 +21,11 @@ package org.logl.logl;
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import org.logl.Level;
+import org.logl.LogMessage;
+import org.logl.Logger;
+import org.logl.LoggerProvider;
+
 import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
 import java.io.CharArrayWriter;
@@ -39,10 +44,6 @@ import java.util.concurrent.Future;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.logl.Level;
-import org.logl.LogMessage;
-import org.logl.Logger;
-import org.logl.LoggerProvider;
 
 class UnformattedLoggerTest {
 

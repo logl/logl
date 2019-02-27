@@ -20,6 +20,9 @@ package org.logl.logl;
 
 import static org.logl.LoggerProvider.loggerName;
 
+import org.logl.Logger;
+import org.logl.LoggerProvider;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -27,9 +30,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
-
-import org.logl.Logger;
-import org.logl.LoggerProvider;
 
 /**
  * A {@link LoggerProvider} for {@link Logger}s that duplicate logging interactions.
